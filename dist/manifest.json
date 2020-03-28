@@ -1,0 +1,17 @@
+{
+  "name": "Harvest Timesheet Sorter",
+  "description": "Alphabetically sorts day-view timesheets in Harvest",
+  "version": "1.0",
+  "content_scripts": [
+   {
+     "matches": ["*://*.harvestapp.com/time/*"],
+     "exclude_matches": ["*://*.harvestapp.com/time/week/*"],
+     "run_at": "document_idle",
+     "js": [
+       "jquery-3.4.1.min.js",
+       "sorter.js"
+     ]
+   }
+ ],
+  "manifest_version": 2
+}

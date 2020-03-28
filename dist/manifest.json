@@ -1,6 +1,6 @@
 {
   "name": "Harvest Timesheet Sorter",
-  "description": "Alphabetically sorts day-view timesheets in Harvest",
+  "description": "Adds a sort button to day-view timesheets in Harvest",
   "version": "1.0",
   "content_scripts": [
    {

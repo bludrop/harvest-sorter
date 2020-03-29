@@ -1,0 +1,21 @@
+.js-day-view-entry-list {
+  display: flex;
+  flex-direction: column;
+}
+.sort-timesheet-wrapper {
+  position: absolute;
+  top: 34px;
+  left: 20px;
+  bottom: 0;
+  width: 60px;
+}
+.sort-timesheet {
+  position: sticky;
+  display: block;
+  top: 7.5rem;
+  margin-top: 7.5rem;
+  width: 60px;
+}
+.sort-timesheet-button {
+  text-align: center;
+}

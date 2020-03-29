@@ -13,7 +13,7 @@ const sortBy = (arr, name) => {
 const sortTimesheet = () => {
 
   // jquery object of the ul containing each entry
-  let $list = $('.js-day-view-entry-list');
+  // let $list = $('.js-day-view-entry-list');
 
   // jquery object of each entry
   let $listitems = $('.js-day-view-entry-list > li');
@@ -54,7 +54,7 @@ const sortTimesheet = () => {
   order = items.map(item => item.order);
 
   // style the parent of the entries
-  $list.attr('style','display: flex; flex-direction: column;');
+  // $list.attr('style','display: flex; flex-direction: column;');
 
   // order the entries alphabetically
   $listitems.each(function(i) {
@@ -64,10 +64,10 @@ const sortTimesheet = () => {
 };
 
 // sort button markup
-const sortButton = '<button type="button" class="js-sort-timesheet" style="width: 60px; position: absolute; top: 9.5rem;"><div class="hui-button hui-button-secondary w-100" style="text-align: center;">Sort</div></button>';
+const sortButton = '<div class="sort-timesheet-wrapper"><button type="button" class="sort-timesheet js-sort-timesheet"><div class="sort-timesheet-button hui-button hui-button-secondary w-100">Sort</div></button></div>';
 
 // append sort button
-$('.js-timesheet-view').append(sortButton);
+$('.js-timesheet-view').prepend(sortButton);
 
 // bind click event
 $('.js-sort-timesheet').on('click', function() {

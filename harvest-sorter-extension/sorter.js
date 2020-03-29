@@ -12,9 +12,6 @@ const sortBy = (arr, name) => {
 // sorts the timesheet alphabetically
 const sortTimesheet = () => {
 
-  // jquery object of the ul containing each entry
-  // let $list = $('.js-day-view-entry-list');
-
   // jquery object of each entry
   let $listitems = $('.js-day-view-entry-list > li');
 
@@ -52,9 +49,6 @@ const sortTimesheet = () => {
 
   // simplify the array into the order values
   order = items.map(item => item.order);
-
-  // style the parent of the entries
-  // $list.attr('style','display: flex; flex-direction: column;');
 
   // order the entries alphabetically
   $listitems.each(function(i) {

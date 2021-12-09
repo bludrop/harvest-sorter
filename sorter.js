@@ -13,7 +13,7 @@ const sortBy = (arr, name) => {
 const sortTimesheet = () => {
 
   // jquery object of each entry
-  let $listitems = $('.js-day-view-entry-list > li');
+  let $listitems = $('.js-day-view-entry-list > tr');
 
   // declaring array variables used later
   let items = [];
@@ -26,8 +26,8 @@ const sortTimesheet = () => {
    * order: placeholder property that will be used to store the sorted order
    */
   $listitems.each(function(i) {
-    let project = $(this).find('.project-client').text();
-    let task = $(this).find('.task-notes').text();
+    let project = $(this).find('.entry-client').text();
+    let task = $(this).find('.entry-task').text();
     let combined = (project + task).replace(/\W/g, '').toUpperCase();
     items.push({
       index: i,
